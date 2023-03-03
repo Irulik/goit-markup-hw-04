@@ -39,6 +39,7 @@ img {
 	--cloud: #f4f4fd;
 	--white: #ffffff;
 	--basic-margin: 24px;
+	--light-slate: 8E8F99;
 }
 
 
@@ -66,11 +67,7 @@ body {
 	outline: 1px solid red;
 }
 
-.section_title {
-	font-weight: 700;
-	font-size: 36;
-	line-height: 1.11;
-}
+/*---------------------------------------------------------*/
 
 .title {
 	font-weight: 700;
@@ -273,6 +270,28 @@ ul {
 	color: var(--purple);
 }
 
+
+/*---------------------Perevagy-ДЗ-4------------------*/
+.advan_item_perevagy {
+	display: flex;
+	background-color: var(--cloud);
+	width: 264px;
+	height: 112px;
+}
+
+.advan_icon {
+	width: 64px;
+	height: 64px;
+	margin: auto;
+}
+
+/*---------------------Perevagy-ДЗ-4-----------------*/
+
+
+
+
+
+
 /*Examples*/
 .examp {
 	padding-bottom: 120px;
@@ -352,7 +371,113 @@ ul {
 	color: var(--purple);
 }
 
-/* Footer */
+/*-----------------Section Team Link ДЗ-4-----------------------------*/
+.team_socials {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+	margin-bottom: 32px;
+}
+
+.team_social {
+	width: 40px;
+	height: 40px;
+}
+
+.team_link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: var(--syniy);
+}
+
+.icon_team_social {
+	width: 16px;
+	height: 16px;
+	
+}
+
+/*-----------------/Section Team Link ДЗ-4-----------------------------*/
+
+
+
+
+
+
+/*-------------Section Customers--ДЗ-4------------------------*/
+
+.social_media_item {
+	align-items: center;
+}
+
+.clients_title {
+	font-weight: 700;
+	line-height: 1.11;
+	text-align: center;
+	letter-spacing: 0.02em;
+	text-transform: capitalize;
+	color: var(--grey);
+	box-sizing: border-box;
+	margin-bottom: 72px;
+}
+
+.clients_list {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+	padding-bottom: 120px;
+}
+
+.clients_item {
+	width: 168px;
+	height: 88px;
+	border-radius: 4px;
+}
+
+.clients_link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #8E8F99;
+}
+
+
+.clients_link:hover, 
+.clients_link:focus {
+	color: var(--grey-syniy);
+	border: 1px solid var(--grey-syniy);
+	border-radius: 4px;
+}
+
+/*
+.clients_link:hover .clients_icon,
+.clients_link:focus .clients_icon {
+	fill: var(--grey-syniy);
+}*/
+
+.clients_icon {
+	fill: currentColor;
+}
+
+
+
+
+/*.clients_link:is(:hover, :focus) {
+	border: 1px solid var(--grey-syniy);
+	border-radius: 4px;
+}*/
+
+/*
+a { color: grey; border: 1px solid grey;}
+     a:hover, a:focus { color: violet; border: 1px solid violet;}
+     icon {fill: currentColor; }*/
+
+/*---------------------------Footer--------------------- */
 
 
 .footer_logo {
@@ -377,6 +502,61 @@ ul {
 	margin-top: 16px;
 }
 
+/*--------------------------Footer_right-ДЗ-4------------------------*/
+
+.containter_foot {
+	display: flex;
+
+}
+
+.footer_media {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: #FFFFFF;
+	height: 16px;
+	margin-bottom: 16px;
+}
+
+.footer_right {
+	width: 208px;
+	height: 80px;
+	padding-left: 120px;
+}
+
+.footer_social_list {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	justify-content: left;
+}
+
+.footer_socil_item {
+	width: 40px;
+	height: 40px;
+}
+
+.footer_link_back {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #434455;
+}
+
+.footer_link_back:hover {
+	background-color: #31D0AA;
+}
+
+.footer_link_sign {
+	width: 16px;
+	height: 16px;
+}
+
+/*--------------------------/Footer_right-ДЗ-4------------------------*/
 
 
 /* portfolio */
@@ -495,39 +675,16 @@ footer {
 	background-color: var(--grey);
 	padding: 100px 0;
 }
-svg{
-	width: inherit;
-	height: inherit;
-}
-.footer{
+
+.footer {
 	display: flex;
 }
-.footer_left{
-	flex: 3;
-}
-.footer_right{
+
+.footer_right {
 	flex: 2;
 }
-.footer_right a{
-	width: 24px;
-	height: 24px;
-	position: absolute;
-	top: 10px;
-	left: 10px;
-}
-.footer_right li{
-	display: flex;
-	position: relative;
-}
-.footer_right use{
-	opacity: 100%;
-}
-.footer_invisible{
-	background-color: #fff;
-	opacity: 10%;
-	border-radius: 30px;
-	width: 40px;
-	height: 40px;
-}
+
+
+
 
 /* Footer */
