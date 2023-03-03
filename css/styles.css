@@ -39,7 +39,8 @@ img {
 	--cloud: #f4f4fd;
 	--white: #ffffff;
 	--basic-margin: 24px;
-	--light-slate: 8E8F99;
+	--light-slate: #8E8F99;
+	--cornflower: #E7E9FC;
 }
 
 
@@ -64,7 +65,7 @@ body {
 	margin: 0 auto;
 	padding: 0 15px;
 	/* Fill: Solid #F4F4FD */
-	outline: 1px solid red;
+
 }
 
 /*---------------------------------------------------------*/
@@ -228,12 +229,16 @@ ul {
 	color: var(--main-light-color);
 	background: var(--syniy);
 	align-items: center;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
 }
 
 .hero_btn:hover,
 .hero_btn:focus {
 	background: var(--grey-syniy);
 }
+
+
 
 /*Advantages*/
 .advan {
@@ -377,6 +382,7 @@ ul {
 	justify-content: center;
 	gap: 24px;
 	margin-bottom: 32px;
+	cursor: pointer;
 }
 
 .team_social {
@@ -394,10 +400,23 @@ ul {
 	background-color: var(--syniy);
 }
 
+.team_list {
+	background-color: var(--main-light-color);
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	border-radius: 0 0 4px 4px;
+}
+
 .icon_team_social {
 	width: 16px;
 	height: 16px;
-	
+}
+
+
+.team_link:hover,
+.team_link:focus {
+	background-color: var(--grey-syniy);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 50%;
 }
 
 /*-----------------/Section Team Link ДЗ-4-----------------------------*/
@@ -443,15 +462,20 @@ ul {
 	justify-content: center;
 	width: 100%;
 	height: 100%;
-	border: 1px solid #8E8F99;
+	border: 1px solid var(--light-slate);
+	fill: var(--light-slate);
 }
 
-
-.clients_link:hover, 
+.clients_link:hover,
 .clients_link:focus {
 	color: var(--grey-syniy);
+	fill: var(--grey-syniy);
 	border: 1px solid var(--grey-syniy);
 	border-radius: 4px;
+}
+
+.clients_icon {
+	fill: currentColor;
 }
 
 /*
@@ -460,22 +484,11 @@ ul {
 	fill: var(--grey-syniy);
 }*/
 
-.clients_icon {
-	fill: currentColor;
-}
-
-
-
-
 /*.clients_link:is(:hover, :focus) {
 	border: 1px solid var(--grey-syniy);
 	border-radius: 4px;
 }*/
 
-/*
-a { color: grey; border: 1px solid grey;}
-     a:hover, a:focus { color: violet; border: 1px solid violet;}
-     icon {fill: currentColor; }*/
 
 /*---------------------------Footer--------------------- */
 
@@ -494,7 +507,7 @@ a { color: grey; border: 1px solid grey;}
 }
 
 .logo_text {
-	color: var(--main-light-color);
+	color: var(--cornflower);
 	font-family: inherit;
 	line-height: 1.28;
 	letter-spacing: 0.02em;
