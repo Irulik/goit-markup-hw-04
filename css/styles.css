@@ -206,7 +206,7 @@ ul {
 	text-align: center;
 	background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 			rgba(46, 47, 66, 0.7)),
-		url("../images/people-office\ 1.jpg");
+		url("../images/people-office-opt.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -642,7 +642,7 @@ ul {
 	height: 48px;
 	padding: 12px 24px 12px 24px;
 	color: var(--syniy);
-		border: 1px solid #E7E9FC;
+	border: 1px solid #E7E9FC;
 	border-radius: 4px;
 	background-color: var(--cloud);
 }
